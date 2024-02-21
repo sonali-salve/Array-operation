@@ -81,28 +81,37 @@ console.log(person);
 // 5. Update the "model" property of the second car object in the array to "Accord". 
 // 6. Print the final "cars" array after performing the above operations. 
 
-let cars = [
-    { make : "Mahindra",model : "Scorpio", year : 2002},
-    { make : "Toyota",model : "Carmy",year : 2018},
-    { make : "Ford" ,model : "Bronco" ,year : 2020}
-];
-console.log("Befor make any changes : ->")
+let cars =[];     //empty array
+let car1={
+    make:"Mahindra",
+    model:"Scorpio",
+    year:2002
+}
+let car2={
+    make:"Toyota",
+    model:"Carmy",
+    year:2018
+}
+let car3={
+    make:"Ford",
+    model:"Bronco",
+    year:2020
+}
+cars.push(car1);        //adding three object in array
+cars.push(car2);
+cars.push(car3);
 console.log(cars);
-console.log("After make any changes : ->");
-let dltObj = cars.shift(); //shift method is used to delete items from array
-console.log("Deleted object ->",dltObj);
+cars.shift();         //removing first object in array
 console.log(cars);
-let car = {              // here I added new object in array
-    make : "Honda",
+let car4 = {          //add new object in array
+    make:"Honda",
     model : "Civic",
     year : 2020
 }
-let addCar = cars.push(car);
+cars.push(car4);
 console.log(cars);
-cars[1].model="Accord";
+cars[1].model = "Accord";    //Updating model value of second object
 console.log(cars);
-
-
 
 
 
