@@ -13,7 +13,8 @@
 
 // 6. Print the final "fruits" array after performing the above operations. 
 
-let fruits=["apple","banana","orange"];
+let fruits=[];
+fruits.push("apple","banana","orange");
 console.log("before any changes :->",fruits);
 console.log("after making some changes on array :->");
 let dltItem=fruits.shift(); //here I used shift method of array -> shift method remove item from start
@@ -49,11 +50,10 @@ console.log("the final array is :->",fruits);
 // object are variable containig other variable. object can contain many variable
 
 //creating object with three properties
-const person = {
-    name : "John",
-    age : 30,
-    city :"New York"
-}
+const person = {}
+person.name="John";
+person.age=30;
+person.city="New York";
 console.log("before make any changes");
 console.log(person);
 console.log("after make some changes");
